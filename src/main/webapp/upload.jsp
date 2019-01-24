@@ -17,10 +17,10 @@
     <div id="input_side">
         <form action="upload" method="post"><fieldset>
             <div class="input_form_elem">
-                Picture Title: <input type="text" name="title" id="title_input">
+                <label for="title_input">Picture Title: </label><input type="text" name="title" id="title_input">
             </div>
             <div class="input_form_elem">
-                Picture: <input type="file" name="image" id="image_input">
+                <label for="image_input">Picture: </label><input type="file" name="image" id="image_input">
             </div>
             <div class="input_form_elem">
                 <input type="reset" value="Reset">
