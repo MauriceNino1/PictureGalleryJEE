@@ -15,13 +15,21 @@
 <div id="content">
 
     <div id="input_side">
-        <div class="input_form_elem">
-            Picture Title: <input type="text" name="title" id="title_input">
-        </div>
-        <div class="input_form_elem">
-            Picture: <input type="file" name="image" id="image_input">
-        </div>
+        <form action="upload" method="post"><fieldset>
+            <div class="input_form_elem">
+                Picture Title: <input type="text" name="title" id="title_input">
+            </div>
+            <div class="input_form_elem">
+                Picture: <input type="file" name="image" id="image_input">
+            </div>
+            <div class="input_form_elem">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+
+        </fieldset></form>
     </div>
+
     <div id="preview_side">
 
     </div>
