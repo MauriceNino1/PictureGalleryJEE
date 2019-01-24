@@ -1,0 +1,60 @@
+html{
+    background-color: #f4f4f4;
+}
+body{
+    background-color: #ffffff;
+    width: 70%;
+    margin-left: 15%;
+    position: relative;
+}
+header{
+    background-color: #afffff;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-top: 50px;
+}
+
+nav > a{
+    float: left;
+    position: relative;
+    padding: 10px;
+    background-color: #d3ffff;
+    text-decoration: none;
+    color: black;
+
+}
+.current_page{
+    border-bottom: white 2px solid;
+    font-weight: bold;
+}
+
+#content{
+    position: relative;
+    background-color: #fff0c4;
+    min-height: 500px;
+    width: 100%;
+    float: left;
+}
+#input_side{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.input_form_elem{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#preview_side{
+    width: 50%;
+    float: left;
+    position: relative;
+}

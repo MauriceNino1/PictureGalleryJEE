@@ -1,16 +1,20 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: melbanna
-  Date: 1/24/19
-  Time: 9:39 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+  <title>Picture Gallery</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.jsp" class="current_page">Home</a>
+      <a href="upload.jsp">Upload</a>
+      <a href="about.jsp">About</a>
+    </nav>
+  </header>
+  <div id="content">
+    <h1>All the images:</h1>
+  </div>
+  <footer>Copyright by Maurice</footer>
+</body>
 </html>
