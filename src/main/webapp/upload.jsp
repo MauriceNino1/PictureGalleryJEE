@@ -15,7 +15,7 @@
 <div id="content">
 
     <div id="input_side">
-        <form action="upload" method="post"><fieldset>
+        <form action="upload" method="post" enctype="multipart/form-data"><fieldset>
             <div class="input_form_elem">
                 <label for="title_input">Picture Title: </label><input type="text" name="title" id="title_input">
             </div>

@@ -17,10 +17,11 @@ public class LatestPostServlet extends HttpServlet{
 
     @java.lang.Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String title="", image="";
+        String title="", image="", imagePath="";
         for(Cookie c : request.getCookies()){
             if(c.getName().equals("latestPostTitle")) title = c.getValue();
-            if(c.getName().equals("latestPostImage")) image = c.getValue();
+            if(c.getName().equals("latestPostImageName")) image = c.getValue();
+            if(c.getName().equals("latestPostImagePath")) imagePath = c.getValue();
         }
 
             PrintWriter out = response.getWriter();
@@ -31,6 +32,7 @@ public class LatestPostServlet extends HttpServlet{
         out.println("<body>");
         out.println("<h1>Ihr Titel: " + title + "</h1>");
         out.println("<h1>Ihr Bild: </h1><p>" + image + "</p>");
+        out.println("<img src=\""+imagePath+"\" alt=\"Preview\" height=\"200\" width=\"200\">");
         out.println("</body>");
     }
 }
