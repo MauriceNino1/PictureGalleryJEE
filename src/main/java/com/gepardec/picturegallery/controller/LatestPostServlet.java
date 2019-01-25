@@ -24,7 +24,7 @@ public class LatestPostServlet extends HttpServlet{
             if(c.getName().equals("latestPostImagePath")) imagePath = c.getValue();
         }
 
-            PrintWriter out = response.getWriter();
+        PrintWriter out = response.getWriter();
 
         response.setContentType("text/html;charset=UTF-8");
         out.println("<!DOCTYPE html>");
