@@ -2,6 +2,10 @@
     <servlet>
         <servlet-name>upload</servlet-name>
         <servlet-class>com.gepardec.picturegallery.controller.UploadServlet</servlet-class>
+        <init-param>
+            <param-name>jdbc_properties</param-name>
+            <param-value>/WEB-INF/jdbc.properties</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>upload</servlet-name>
