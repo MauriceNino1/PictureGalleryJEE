@@ -19,7 +19,7 @@ public class UploadServlet extends HttpServlet {
 
         // Not yet supported (Save to database)
         Properties properties = new Properties();
-        properties.load(getResourceInputStream());
+        properties.load(getResourceInputStream("jdbc_properties"));
 
         // Handle Request
         String imageTitle = request.getParameter("title");
@@ -41,8 +41,8 @@ public class UploadServlet extends HttpServlet {
         response.setHeader("Location", "latestPost");
     }
 
-    private InputStream getResourceInputStream() {
-        String jdbc_properties = getInitParameter("jdbc_properties");
+    private InputStream getResourceInputStream(String resourcename) {
+        String jdbc_properties = getInitParameter(resourcename);
         ServletContext application = getServletContext();
         return application.getResourceAsStream(jdbc_properties);
     }
